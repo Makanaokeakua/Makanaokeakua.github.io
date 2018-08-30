@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demonstrating Basic Front-End Web Design Skills</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Makanaokeakua Edwards">
+    <meta name="description" content="Welcome to my dummy website!">
+    <meta name="keywords" content="dummy, fake website, potfolio, makanaokeakua">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+    <body>
+        
+        <header>
+            <img id="home" src="images/header/logo.png"/ style="width:175px; position: relative">
+        </header>
+        <section>
+            <h1>Showcasing Basic Developing Skills</h1> 
+            <br/>
+            <br/>
+            <!-- Implementing Forms -->
+            <h2>My Form!</h2>
+            <form id="myform" action="POST" class="my-form">
+                <p>Join Our Newsletter!</p>
+                <input type="email" name="email" class="email" value="Enter email..."/>
+                <button type="submit" name="submit" class="submit">Subscribe</button>
+            </form>
+            <br/>
+            <br/>
+            <!-- Implementing Animations -->
+            <h2 id="hovers">Hover Animation (USING CSS)</h2>
+            <div class="button-holder">
+            <div class="button-animated-css"><div class="box-cs"><p style="color: white">hover</p></div></div>
+            </div>
+            <br/>
+            <br/>
+            <h2>Same Animation (USING JAVASCRIPT)</h2>
+            <div class="button-holder" id="holder-js">
+            <div class="button-animated-javascript"><div class="box-js"><p style="color: white; line-height: 50px">hover</p></div></div>
+            </div>
+            <br/>
+            <br/>
+            <!-- Creating a Calculator With Javascript! -->
+            <h2>Creating Applications With Javascript</h2>
+            <div class="calculator" id="calculator">
+                <h4>Maka's Calculator</h4>
+                <input type="text" readonly="20" id="calculation" style="color: black"/>
+                <div id="button-holder">
+                    <input type="button" class="button" id="button2" value="1"onclick="v('1')"/>
+                    <input type="button" class="button" id="button3" value="2"onclick="v('2')"/>
+                    <input type="button" class="button" id="button4" value="3"onclick="v('3')"/>
+                    <input type="button" class="button" id="button13" value="/" onclick="v('/')"/>
+                    <input type="button" class="button" id="button5" value="4"onclick="v('4')"/>
+                    <input type="button" class="button" id="button6" value="5"onclick="v('5')"/>
+                    <input type="button" class="button" id="button7" value="6"onclick="v('6')"/>
+                    <input type="button" class="button" id="button14" value="*"onclick="v('*')"/>
+                    <input type="button" class="button" id="button8" value="7"onclick="v('7')"/>
+                    <input type="button" class="button" id="button9" value="8"onclick="v('8')"/>
+                    <input type="button" class="button" id="button10" value="9"onclick="v('9')"/>
+                    <input type="button" class="button" id="button12" value="-"onclick="v('-')"/>
+   <!--                 <input type="button" class="button" id="button15" value="+/-"onclick="v('+/-')"/> -->
+                    <input type="button" class="button" id="button1" value="0"onclick="v('0')"/>
+                    <input type="button" class="button" id="button11" value="+"onclick="v('+')"/>
+                    <input type="button" class="button" id="submit" style="color: white" value="="onclick="Calculate()"/>
+                    <input type="button" class="button" style="width: 60px; height: 60px; background-color: rgba(255, 60, 60, 1); border-style: none; color: white" value="C" onclick="c('')"/>
+                </div>
+            </div>
+            <br>
+            <h2>Creating A Drop Down Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Drop Down</a>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Form</a></li>
+                            <li><a href="#">Animation</a></li>
+                            <li><a href="#">Application</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+            <br/>
+            <p></p>
+            <br/>
+            <p></p>
+        <footer></footer>
+    <script type="application/javascript" src="scripts/index/calculator.js"></script>   
+    <script type="application/javascript" src="scripts/index/index.js"></script>
+    </body>
+</html>
